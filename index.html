@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex.css">
+
+</head>
+<body>
+    <!-- <script src="ex.js"></script> -->
+    <div class="main">
+        <ol id="ol">
+            <li>Возможные вклады:</li>
+        </ol>
+        <div class="contributor" id="contributor">
+            <div class="deposit" id="deposit">
+                <div>Для подсчета конечной суммы</div>
+                <input type="text" id="nameDeposit1" placeholder="Название вклада"></input>
+                <input type="number" class="summDeposit1" placeholder="Сумма вклада" ></input>
+                <input type="number" class="dayDeposit1" placeholder="Длительность вклада"></input>
+                <button id="btn1">
+                    посчитать
+                </button>
+                <span id="result1"></span>
+            </div>
+            <div class="deposit2" id="deposit2">
+                <div>Для подсчета конечной суммы</div>
+                <input type="text" id="nameDeposit2" placeholder="Название вклада"></input>
+                <input type="number" class="summDeposit2" placeholder="Сумма вклада"></input>
+                <input type="number" class="dayDeposit2" placeholder="Длительность вклада"></input>
+                <button id="btn2">
+                    посчитать
+                </button>
+                <span id="result2"></span>
+            </div>
+        </div>
+
+        <div class="deposit">
+            <div>Для добавления нового вклада</div>
+            <input type="text" id="nameNewDeposit" placeholder="Название нового вклада"></input>
+            <input type="number" class="percentNewDeposit" placeholder="Процент вклада" ></input>
+            <input type="number" class="capitalizationNewDeposit" placeholder="Длительность копитализации"></input>
+            <button id="btn3">
+                Добавить
+            </button>
+        </div>
+    </div>
+        
+    <script src="ex.js"></script>
+</body>
+</html>
