@@ -6,7 +6,7 @@ class Deposit{
     }
     saveDeposit(names, percent, capitalization){
         this.nameDeposit.push(names);
-        this.percent.push(percent/100);
+        this.percent.push(percent/100/12);
         this.capitalization.push(capitalization);    
     }
 }
