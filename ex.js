@@ -6,7 +6,7 @@ class Deposit{
     }
     saveDeposit(names, percent, capitalization){
         this.nameDeposit.push(names);
-        this.percent.push(percent/100/12);
+        this.percent.push(percent/100);
         this.capitalization.push(capitalization);    
     }
 }
@@ -19,7 +19,7 @@ function contributor(names, summ, month){
         if(deposits.nameDeposit[i]==names){
             let kolCap=Math.floor(month/deposits.capitalization[i]);
             for (let k=0; k<kolCap; k++){
-                summ+=summ*deposits.percent[i];
+                summ+=summ*deposits.percent[i]/12;
             }
         }
     }
